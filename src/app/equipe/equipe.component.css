@@ -1,0 +1,115 @@
+.contact{
+  background:#1d1d1c;
+  }
+
+  .padding-contact{
+  padding:45px 0;
+  font-family: "Abel-Regular";
+  margin: auto;
+
+  }
+
+  .padding-contact h3{
+  font-family: "BlackOpsOne-Regular";
+  font-size:24px;
+  /* padding-bottom:20px; */
+  color:#5bb2fc;
+  letter-spacing: 3px;
+  text-align:center;
+  }
+
+  .padding-contact span{
+  color:yellow;
+  display:block;
+  padding-top:10px;
+  font-weight: bold;
+  }
+
+  address{
+  font-size:16px;
+  color:#fff;
+  text-align:left;
+  line-height:10px;
+  }
+
+
+  .social-icons ul li{
+    font-size:16px;
+    color:#fff;
+   font-weight: bold;
+    line-height:10px;
+  }
+  .social, .address{
+  padding:45px 0px 50px 0px;
+  }
+
+  .social{
+    padding-bottom:25px;
+    }
+
+  /* .social-icons h3{
+  text-align:center;
+  } */
+
+  ul.social li {
+      display: inline-block;
+  }
+  ul.social li a {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  background: url("../../assets/images/img-sprite.png") no-repeat 0px 0px;
+  transition:0.5s all;
+  -webkit-transition:0.5s all;
+  -moz-transition:0.5s all;
+  -o-transition:0.5s all;
+  -ms-transition:0.5s all;
+  text-decoration: none;
+  }
+
+  ul.social li a.facebook {
+      background-position: 0px 0px;
+  }
+  ul.social li a.facebook:hover {
+      background-position: 0px -50px;
+  }
+  ul.social li a.twitter {
+      background-position: -50px 0px;
+  }
+  ul.social li a.twitter:hover {
+      background-position: -50px -50px;
+  }
+
+  ul.social li a.instagram {
+      background-position: -150px 0px;
+  }
+  ul.social li a.instagram:hover {
+      background-position: -150px -50px;
+  }
+  ul.social li a.youtube {
+      background-position: -200px 0px;
+  }
+  ul.social li a.youtube:hover {
+      background-position: -200px -50px;
+  }
+
+  /* ---------- Contact Ends here ---------- */
+
+  .footer{
+  padding:0px 20px 50px 20px;
+  }
+
+  .footer p{
+  font-size:18px;
+  font-family: "Abel-Regular";
+  color:#fff;
+  }
+
+  .footer a{
+  text-decoration:none;
+  color:#5bb2fc;
+  }
+
+  .footer a:hover{
+  color:yellow;
+  }

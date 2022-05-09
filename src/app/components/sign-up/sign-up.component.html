@@ -1,0 +1,71 @@
+<div class="content">
+<div class="form-container mat-elevation-z5">
+  <h1>Enregistrez un nouvel utilisateur !</h1>
+  <form [formGroup]="signUpForm" (ngSubmit)="submit()">
+    <mat-form-field>
+      <input matInput placeholder="Name" formControlName="name" />
+      <mat-error *ngIf="name?.errors?.['required']">
+        Le nom est requis
+      </mat-error>
+    </mat-form-field>
+    <mat-form-field>
+      <input matInput placeholder="Email address" formControlName="email" />
+      <mat-error *ngIf="email?.errors?.['required']">
+        Adresse e-mail est nécessaire
+      </mat-error>
+      <mat-error *ngIf="email?.errors?.['email']">
+        S'il vous plaît, mettez une adresse email valide
+      </mat-error>
+    </mat-form-field>
+    <mat-form-field>
+      <input
+        matInput
+        type="password"
+        placeholder="Password"
+        formControlName="password"
+        [type]="isHide ? 'password' : 'text'"
+      />
+      <button
+      mat-icon-button
+      matSuffix
+      (click)="isHide = !isHide"
+      [attr.aria-label]="'Hide password'"
+      [attr.aria-pressed]="isHide"
+    >
+      <mat-icon>{{ isHide ? "visibility_off" : "visibility" }}</mat-icon>
+    </button>
+      <mat-error *ngIf="password?.errors?.['required']">
+        Mot de passe requis
+
+      </mat-error>
+    </mat-form-field>
+    <mat-form-field>
+      <input
+        matInput
+        type="password"
+        placeholder="Confirm Password"
+        formControlName="confirmPassword"
+        [type]="isHide ? 'password' : 'text'"
+      />
+      <button
+      mat-icon-button
+      matSuffix
+      (click)="isHide = !isHide"
+      [attr.aria-label]="'Hide password'"
+      [attr.aria-pressed]="isHide"
+    >
+      <mat-icon>{{ isHide ? "visibility_off" : "visibility" }}</mat-icon>
+    </button>
+      <mat-error *ngIf="confirmPassword?.errors?.['required']">
+        Confirmer le mot de passe est requis
+      </mat-error>
+    </mat-form-field>
+    <mat-error *ngIf="signUpForm.errors?.['passwordsDontMatch']">
+      Les mots de passe doivent correspondre
+    </mat-error>
+    <div class="center margin-top">
+      <button type="submit" mat-raised-button color="primary">S'inscrire!</button>
+    </div>
+  </form>
+</div>
+</div>

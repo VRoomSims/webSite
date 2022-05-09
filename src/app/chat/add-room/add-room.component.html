@@ -1,0 +1,62 @@
+<div class="form-container mat-elevation-z5">
+  <h1>Add new room</h1>
+  <form [formGroup]="roomForm" >
+    <mat-form-field appearance="outline">
+      <mat-label>Room Name</mat-label>
+      <input matInput type="text"
+      matInput
+      formControlName="title"
+      placeholder="Room Name"/>
+      <!-- <mat-error *ngIf="title?.errors?.['required']">
+        Email address is required
+      </mat-error> -->
+
+    </mat-form-field>
+
+    </form>
+
+
+
+
+      <form [formGroup]="form" >
+
+          <div class="form-group">
+            <h1>Room Type</h1>
+            <input id="male" type="radio" value="public" name="gender" formControlName="gender" checked >
+
+                <label for="male" >Public</label>
+
+                <input id="female"  type="radio" value="private" name="gender" formControlName="gender">
+
+                <label for="female">Private</label>
+
+          </div>
+
+          <input  type="password"
+      placeholder="Room Name"
+
+      [disabled]="form.value['gender'] != 'private'" formControlName="roomCode"/>
+      </form>
+
+    <!-- <div *ngIf="!selectedOption" style="margin-top: 10px;">
+      <mat-form-field class="example-full-width" appearance="outline">
+        <mat-label>Room Code</mat-label>
+        <input matInput #roomCode maxlength="6" placeholder="room code" formControlName="roomCode" required="true">
+        <mat-hint align="end">{{roomCode.value.length}} / 6</mat-hint>
+      </mat-form-field>
+    </div> -->
+
+
+    <!-- <mat-form-field appearance="outline" *ngIf="selectedOption == 'private' "> -->
+      <!-- <input matInput type="number" maxlength="6" placeholder="Room Code"> -->
+    <!-- </mat-form-field> -->
+
+
+    <div class="center margin-top">
+        <button type="submit" mat-raised-button color="primary" (click)=" createNewRoom();"
+        >Create</button>
+    </div>
+
+</div>
+
+

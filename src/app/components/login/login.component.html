@@ -1,0 +1,43 @@
+<div class="form-container mat-elevation-z5">
+  <h1>Login</h1>
+  <form [formGroup]="loginForm" >
+    <mat-form-field appearance="outline">
+      <mat-label>Email</mat-label>
+      <input matInput type="email"
+      matInput
+      formControlName="email"
+      placeholder="Ex. drcmind@example.com" placeholder="Email address" formControlName="email" />
+      <mat-error *ngIf="email?.errors?.['required']">
+        Email address is required
+      </mat-error>
+      <mat-error *ngIf="email?.errors?.['email']">
+        Please enter a valid email address
+      </mat-error>
+    </mat-form-field>
+
+    <mat-form-field appearance="outline">
+      <mat-label>Mot de passe</mat-label>
+      <input matInput [type]="isHide ? 'password' : 'text'" type="password" placeholder="Password" formControlName="password" />
+      <button
+      mat-icon-button
+      matSuffix
+      (click)="isHide = !isHide ; switchToggleIcon();"
+      [attr.aria-label]="'Hide password'"
+      [attr.aria-pressed]="isHide"
+
+    >
+      <mat-icon>{{ isHide ? "visibility_off" : "visibility" }}</mat-icon>
+    </button>
+      <mat-error *ngIf="password?.errors?.['required']">
+        Password is required
+      </mat-error>
+    </mat-form-field>
+    <div class="center margin-top">
+        <button type="submit" mat-raised-button color="primary" (click)=" switchLoginButton();"
+        >Login</button>
+    </div>
+    <span class="center margin-top">New to our platform? <a class="sign-up-link" (click)="opendialogg()">Sign up!</a></span>
+  </form>
+</div>
+
+

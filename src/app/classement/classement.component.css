@@ -1,0 +1,77 @@
+.requirement{
+  /* background:url("../../assets/images/classements.jpg" ) 0px 0px no-repeat; */
+  width:100%;
+  background-size:cover;
+  font-family: "Abel-Regular";
+  }
+
+  .all-require{
+  padding:150px 0;
+  }
+
+  .heading{
+  margin:0 auto;
+  padding-bottom:50px;
+  color:#fff;
+  }
+
+  .heading h3{
+  padding:25px 0;
+  font-size:38px;
+  font-family: "Abel-Regular";
+  font-weight:800;
+  color:#f7de29;
+  }
+
+  .heading span{
+  color:#cfd5f7;
+  }
+
+  .grid{
+  background:rgba(41, 40, 40, 0.7);
+  padding:50px 0;
+  height:475px;
+  }
+
+  .grid i {
+  display: inline-block;
+  width: 64px;
+  height: 64px;
+  background: url("../../assets/images/rank.png") no-repeat 0px 0px;
+  padding-bottom: 75px;
+  text-decoration: none;
+  }
+
+  .grid i.pc {
+      background-position: 0px 0px;
+  }
+  .grid i.xbox {
+      background-position: -64px 0px;
+  }
+  .grid i.ps {
+      background-position: -128px 0px;
+  }
+
+  .grid p{
+  color:#fff;
+  padding:5px 25px;
+  text-align:left;
+  font-size:20px;
+  }
+
+  .grid h5{
+  color:#fff;
+  font-size:22px;
+  text-align:left;
+  padding:5px 25px;
+  font-weight:600;
+  }
+
+  .grid-bottom{
+  padding-top:30px;
+  }
+
+  .grid span{
+  font-size:16px;
+  color:rgba(239, 239, 243, 0.83);
+  }

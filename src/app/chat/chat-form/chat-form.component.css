@@ -1,0 +1,49 @@
+.R{
+    width: max-content;
+}
+
+
+.chatInput{
+    flex: 1;
+    font-size: 1.3em;
+    font-family: 'Open Sans', sans-serif;
+    background-color: #eee;
+    color: #000;
+    transition: 0.1s ease-out;
+    margin: 5px;
+    padding: 5px;
+    border-radius: 6px;
+    width: 600px;
+    margin-left: 400px;
+}
+
+.chatInput:focus{
+    background-color: #E4F1FE;
+    color: #222;
+    transition: 0.2s ease-in;
+}
+
+.chatButton,.exitChat{
+    flex: 1;
+    padding: 5px;
+    margin: 10px;
+    font-size: 1.3em;
+    font-family: 'Droid Sans', sans-serif;
+    background-color: #2A2845;
+    color: white;
+    transition: 0.2s ease-out;
+    min-width: 50px;
+    border-radius: 6px;
+}
+
+
+
+.exitChat{
+    margin-left: 20px;
+    background-color: #981f1f;
+
+}
+
+.exitChat .chatButton:hover{
+    background-color: #444;
+}

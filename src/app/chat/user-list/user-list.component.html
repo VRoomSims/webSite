@@ -1,0 +1,16 @@
+<div class="userList">
+  <mat-icon (click)="openPopUp()">add_to_queue</mat-icon>
+  <!-- <span>Add New Room </span> -->
+  <div #scroller class="feedWrapper">
+
+    <div class="userItem" *ngFor="let room of roomData">
+
+      <span class="userName" (click)="enterRoom(room.title);">
+        {{room.title}}
+      </span>
+
+    </div>
+
+
+</div>
+  </div>

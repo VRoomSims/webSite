@@ -1,0 +1,13 @@
+
+<div class="R">
+    <input
+        class="chatInput"
+        [(ngModel)]="message"
+        (keydown)="handleSubmit($event)"
+        />
+
+    <button class="chatButton"  (click)="send()"
+      >Envoyer</button>
+
+      <button *ngIf="roomname !== '' " class="exitChat" (click)="exitRoom()">Exit</button>
+</div>

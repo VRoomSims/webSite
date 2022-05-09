@@ -1,0 +1,23 @@
+<div class="form-container mat-elevation">
+  <h1>Please enter the room code</h1>
+  <form [formGroup]="roomPass" >
+    <mat-form-field appearance="fill">
+      <input matInput type="password"
+      matInput
+      formControlName="code"
+      placeholder="enter the room code"  />
+      <mat-error *ngIf="code?.errors?.['required']">
+        room code cannot be empty
+      </mat-error>
+
+    </mat-form-field>
+
+
+    <div class="center margin-top">
+        <button type="submit" mat-raised-button color="primary" (click)="isThePassIsCorrect();"
+        >Enter</button>
+    </div>
+  </form>
+</div>
+
+

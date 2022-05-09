@@ -1,0 +1,21 @@
+
+<div id="feeed">
+<div class="feed">
+  <!-- <ion-content> -->
+
+<!--
+    <div id="divBlur">
+      <img id="bubbleTopRight" src="../../assets/images/bubble top right.png">
+      <img id="bubleBottomLeft" src="../../assets/images/bubble top left.png">
+      <img id="bubbleMidRight" src="../../assets/images/bubble top right2.png">
+      <img id="bubbleBottonRight" src="../../assets/images/bubble top right2.png">
+      <img id="bubbleTopLeft" src="../../assets/images/bubble bottom left.png">
+    </div> -->
+
+  <!-- </ion-content> -->
+  <div *ngFor="let message of feed " class="message p-2">
+    <app-message [chatMessage]="message"></app-message>
+
+  </div>
+</div>
+</div>

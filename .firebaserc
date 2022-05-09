@@ -1,0 +1,22 @@
+{
+  "targets": {
+    "angular-sign-up": {
+      "hosting": {
+        "angular-sign-up": [
+          "angular-sign-up"
+        ]
+      }
+    },
+    "pimproj-abb76": {
+      "hosting": {
+        "angular-sign-up": [
+          "pimproj-abb76"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "pimproj-abb76"
+  }
+  
+}
